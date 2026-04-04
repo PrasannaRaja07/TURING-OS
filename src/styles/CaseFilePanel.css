@@ -1,0 +1,63 @@
+.casefile-module {
+  border: 1px solid var(--phosphor-green);
+  padding: 25px;
+  background: rgba(13, 13, 26, 0.8);
+  margin-bottom: 30px;
+}
+
+.casefile-header {
+  font-size: 0.9em;
+  border-bottom: 1px dashed var(--phosphor-green);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.casefile-selector {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.casefile-selector label {
+  font-size: 0.7em;
+  color: var(--tape-border);
+  margin-bottom: 8px;
+}
+
+.retro-select {
+  background: #000;
+  color: var(--phosphor-green);
+  border: 1px solid var(--phosphor-green);
+  padding: 8px;
+  font-family: inherit;
+  font-size: 0.9em;
+  outline: none;
+}
+
+.casefile-narrative {
+  margin-bottom: 25px;
+  border-left: 2px solid var(--phosphor-green);
+  padding-left: 15px;
+}
+
+.narrative-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+.narrative-body {
+  font-size: 0.85em;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.casefile-specs {
+  font-size: 0.75em;
+  color: var(--tape-border);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px;
+  border-radius: 2px;
+  line-height: 1.5;
+}

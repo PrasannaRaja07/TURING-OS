@@ -1,0 +1,70 @@
+.tape-module {
+  border: 1px solid var(--phosphor-green);
+  padding: 15px;
+  margin-bottom: 20px;
+  background: rgba(13, 13, 26, 0.8);
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+.tape-header {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed var(--phosphor-green);
+  padding-bottom: 5px;
+}
+
+.tape-viewer-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.tape-strip {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.tape-cell {
+  width: 50px;
+  height: 60px;
+  border: 1px solid var(--tape-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--tape-beige);
+  color: var(--crt-dark);
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 2px;
+}
+
+.tape-cell .cell-index {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.3em;
+  color: #555;
+}
+
+.tape-cell.head-active {
+  border: 2px solid var(--phosphor-green);
+  box-shadow: 0 0 10px var(--phosphor-green);
+}
+
+.head-pointer {
+  margin-top: 10px;
+  color: var(--phosphor-green);
+  font-size: 0.8em;
+  text-shadow: 0 0 5px var(--phosphor-green);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}

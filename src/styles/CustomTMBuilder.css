@@ -1,0 +1,64 @@
+.builder-module {
+  border: 1px solid var(--phosphor-green);
+  padding: 15px;
+  background: rgba(13, 13, 26, 0.8);
+  margin-top: 20px;
+}
+
+.builder-header {
+  font-size: 0.9em;
+  border-bottom: 1px dashed var(--phosphor-green);
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.rules-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.retro-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.retro-table th {
+  color: #fff;
+  border-bottom: 1px solid #555;
+  padding: 5px;
+}
+
+.retro-table td {
+  padding: 4px;
+  color: var(--phosphor-green);
+}
+
+.add-rule-row input, .add-rule-row select {
+  background: #000;
+  color: #fff;
+  border: 1px solid var(--tape-border);
+  width: 40px;
+  text-align: center;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.add-btn {
+  background: var(--phosphor-green);
+  color: #000;
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: #ff3333;
+  color: #000;
+  border: none;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}

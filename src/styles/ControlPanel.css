@@ -1,0 +1,146 @@
+.control-module {
+  border: 1px solid var(--phosphor-green);
+  padding: 25px;
+  background: rgba(13, 13, 26, 0.8);
+  margin-top: 30px;
+}
+
+.control-header {
+  font-size: 0.9em;
+  border-bottom: 1px dashed var(--phosphor-green);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.control-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.control-buttons .retro-btn {
+  flex: 1;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.retro-btn {
+  background: #000;
+  border: 1px solid var(--phosphor-green);
+  color: var(--phosphor-green);
+  font-family: inherit;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.2s;
+  box-shadow: 0 0 5px rgba(57, 255, 20, 0.2);
+}
+
+.retro-btn:hover:not(:disabled) {
+  background: var(--phosphor-green);
+  color: #000;
+  box-shadow: 0 0 15px var(--phosphor-green);
+}
+
+.retro-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #555;
+  color: #555;
+  box-shadow: none;
+}
+
+.start-btn { border-color: #fff; color: #fff; }
+.start-btn:hover:not(:disabled) { background: #fff; color: #000; box-shadow: 0 0 15px #fff; }
+
+.reset-btn { border-color: #ff3333; color: #ff3333; }
+.reset-btn:hover:not(:disabled) { background: #ff3333; color: #000; box-shadow: 0 0 15px #ff3333; }
+
+.status-indicator {
+  font-size: 0.8em;
+  color: #aaa;
+  margin-bottom: 25px !important;
+}
+
+.status-idle, .status-running { color: var(--phosphor-green); text-shadow: 0 0 5px var(--phosphor-green); }
+.status-accepted { color: #0f0; font-weight: bold; text-shadow: 0 0 8px #0f0; }
+.status-rejected { color: #f00; font-weight: bold; text-shadow: 0 0 8px #f00; }
+.status-looping { color: #ff0; font-weight: bold; text-shadow: 0 0 8px #ff0; }
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.7em;
+  color: var(--tape-border);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.retro-input {
+  flex: 1;
+  background: #000;
+  border: 1px solid var(--phosphor-green);
+  color: var(--phosphor-green);
+  font-family: inherit;
+  font-size: 0.95em;
+  padding: 6px 10px;
+  outline: none;
+  caret-color: var(--phosphor-green);
+  box-shadow: inset 0 0 6px rgba(57, 255, 20, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.retro-input:focus {
+  box-shadow: inset 0 0 12px rgba(57, 255, 20, 0.2), 0 0 8px var(--phosphor-green);
+}
+
+.retro-input::placeholder {
+  color: #444;
+}
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.slider-group label {
+  font-size: 0.7em;
+  color: var(--tape-border);
+  margin-bottom: 10px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: var(--phosphor-green);
+  cursor: pointer;
+  margin-top: -6px;
+  box-shadow: 0 0 5px var(--phosphor-green);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #333;
+}
