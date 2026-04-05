@@ -1,0 +1,17 @@
+{
+  "name": "Unary Adder",
+  "description": "Adds two unary numbers separated by a '0'. Input example: 11011 (turns into 1111B)",
+  "states": ["q0", "q1", "q2", "q_accept", "q_reject"],
+  "inputAlphabet": ["0", "1"],
+  "tapeAlphabet": ["0", "1", "B"],
+  "startState": "q0",
+  "acceptState": "q_accept",
+  "rejectState": "q_reject",
+  "deltaRaw": [
+    ["q0", "1", "q0", "1", "R"],
+    ["q0", "0", "q1", "1", "R"],
+    ["q1", "1", "q1", "1", "R"],
+    ["q1", "B", "q2", "B", "L"],
+    ["q2", "1", "q_accept", "B", "R"]
+  ]
+}

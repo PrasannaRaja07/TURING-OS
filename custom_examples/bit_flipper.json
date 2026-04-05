@@ -1,0 +1,15 @@
+{
+  "name": "Bit Flipper",
+  "description": "Flips all bits in a binary number. Input example: 10110",
+  "states": ["q0", "q_accept", "q_reject"],
+  "inputAlphabet": ["0", "1"],
+  "tapeAlphabet": ["0", "1", "B"],
+  "startState": "q0",
+  "acceptState": "q_accept",
+  "rejectState": "q_reject",
+  "deltaRaw": [
+    ["q0", "0", "q0", "1", "R"],
+    ["q0", "1", "q0", "0", "R"],
+    ["q0", "B", "q_accept", "B", "R"]
+  ]
+}
